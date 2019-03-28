@@ -1,0 +1,7 @@
+{
+  "name": "iPet",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

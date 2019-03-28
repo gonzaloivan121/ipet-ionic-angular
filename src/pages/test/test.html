@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>API</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button block (click)="test()">Test API</button>
+  <div *ngIf="this.users">
+    <ion-list>
+      <button *ngFor="let user of this.users" ion-item detail-push (click)="buttonClick(user)">
+        {{ user.usuario }}
+      </button>
+    </ion-list>
+  </div>
+</ion-content>
